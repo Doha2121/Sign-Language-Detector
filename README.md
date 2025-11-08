@@ -17,57 +17,21 @@ This project allows detection and classification of Arabic hand signs from a web
 
 ---
 
-## 🛠️ Technologies & Libraries
+# 🤖 Arabic Sign Language Detector
 
-- **Python 3.x**
-- **NumPy** – Feature arrays
-- **OpenCV** – Image/video processing
-- **MediaPipe** – Hand landmark detection
-- **scikit-learn** – SVM training and scaling
-- **Streamlit + streamlit-webrtc** – Real-time web demo
-- **Pickle** – Model & feature storage
+**Real-Time Gesture Recognition System for Arabic Sign Language**
 
-## 🎯 Usage Instructions
- I used this dataset Arabic Sign Language ArSL dataset
-from kaggle Arabic Sign Language ArSL dataset
-https://www.kaggle.com/datasets/sabribelmadoui/arabic-sign-language-unaugmented-dataset
-### 1️⃣ Dataset Preparation
-- Organize your YOLO dataset using `1_organize_dataset.py`.
-- This will create `data_classification/` with one folder per sign.
+This project implements a complete computer vision pipeline to detect and classify Arabic sign language symbols using live webcam input.
 
-### 2️⃣ Feature Extraction
-```bash
-python src/2_extract_features.py
-3️⃣ Model Training
-python src/3_train_model.py
+---
 
+## 🎨 Live Demonstration
 
-Trains SVM on features and saves the trained model & scaler as model.p.
+Experience the Arabic Sign Language Detector in action and test it with your own webcam:
 
-Prints classification accuracy on a test split.
+* **Live Demo (Hugging Face Spaces):**
+    [https://huggingface.co/spaces/Doha000/arabic-sign-language-detector](https://huggingface.co/spaces/Doha000/arabic-sign-language-detector)
 
-4️⃣ Real-Time Detection (Local)
-python src/4_real_time_detect.py
-
-
-Opens webcam and predicts hand signs in real-time.
-
-Press q to quit.
-
-5️⃣ Streamlit Web Demo
-streamlit run web_demo/app.py
-
-
-Accesses live webcam in browser.
-
-Displays real-time predictions with confidence and FPS.
-
-Works on Hugging Face Spaces or local deployment.
-
-🎨 Demo
-
-Live Demo (Hugging Face Spaces):
-https://huggingface.co/spaces/Doha000/arabic-sign-language-detector
-
+---
 
 
