@@ -1,4 +1,4 @@
-# 🤟 Arabic Sign Language Detector
+# Sign Language Detector
 
 **Real-time Arabic Sign Language detection using MediaPipe hand landmarks and a custom SVM model.**
 
@@ -27,28 +27,10 @@ This project allows detection and classification of Arabic hand signs from a web
 - **Streamlit + streamlit-webrtc** – Real-time web demo
 - **Pickle** – Model & feature storage
 
----
-
-## 📁 Project Structure
-Arabic-Sign-Language-Detector/
-├── models/ <-- Optional trained model folder
-├── data_classification/ <-- Organized images per sign
-├── src/ <-- Core scripts
-│ ├── 1_organize_dataset.py <-- Convert YOLO dataset to classification folders
-│ ├── 2_extract_features.py <-- Extract hand landmarks and save to pickle
-│ ├── 3_train_model.py <-- Train SVM on extracted features
-│ └── 4_real_time_detect.py <-- Local webcam detection
-├── web_demo/
-│ ├── app.py <-- Streamlit web app for live demo
-│ └── requirements.txt <-- Python dependencies
-├── data.pickle <-- Extracted features & labels
-├── model.p <-- Trained SVM model & scaler
-└── README.md <-- This file
-
----
-
 ## 🎯 Usage Instructions
-
+ I used this dataset Arabic Sign Language ArSL dataset
+from kaggle Arabic Sign Language ArSL dataset
+https://www.kaggle.com/datasets/sabribelmadoui/arabic-sign-language-unaugmented-dataset
 ### 1️⃣ Dataset Preparation
 - Organize your YOLO dataset using `1_organize_dataset.py`.
 - This will create `data_classification/` with one folder per sign.
@@ -86,5 +68,6 @@ Works on Hugging Face Spaces or local deployment.
 
 Live Demo (Hugging Face Spaces):
 https://huggingface.co/spaces/Doha000/arabic-sign-language-detector
+
 
 
